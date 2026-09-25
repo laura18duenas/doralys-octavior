@@ -407,199 +407,132 @@ CONFIRMAR CON EL NOVIO</a>
 
 <script>
     // Lista de invitados y cantidad de cupos
-  const invitados = { 
+
+    const invitados = { 
 
     "001": { 
-        nombre: "Flia Galeano Martinez", 
-        cupos: 4 
+        nombre: "María Eugenia & Sr", 
+        cupos: 2 
     },
     "002": { 
-        nombre: "Flia Martinez", 
-        cupos: 6 
+        nombre: "Over Bermudez", 
+        cupos: 2 
     },
     "003": { 
-        nombre: "Flia Muñoz Martinez", 
-        cupos: 4 
+        nombre: "Sr Ronny Pitalua & Sra", 
+        cupos: 2 
     },
     "004": { 
-        nombre: "Familia Martinez Madera", 
-        cupos: 4 
+        nombre: "Sr Camilo Pitalua", 
+        cupos: 2 
     },
     "005": { 
-        nombre: "Sandra e hijos", 
-        cupos: 3 
+        nombre: "Sr Diego Pitalua", 
+        cupos: 2 
     },
     "006": { 
-        nombre: "Luz Neida y Jesús", 
-        cupos: 2 
+        nombre: "Sr Nelo Saenz", 
+        cupos: 1 
     },
     "007": { 
-        nombre: "Andres y Yolima", 
-        cupos: 2 
+        nombre: "Sra Gregoria Diaz", 
+        cupos: 1 
     },
     "008": { 
-        nombre: "Norelys y Diego", 
+        nombre: "Sra María Mercedes", 
         cupos: 2 
     },
     "009": { 
-        nombre: "Nayelis Alarcon", 
-        cupos: 1 
+        nombre: "Sirly & Jaime", 
+        cupos: 2 
     },
     "010": { 
-        nombre: "Jose Luis", 
-        cupos: 1 
+        nombre: "Jhan Carlos & Ketty", 
+        cupos: 2 
     },
     "011": { 
-        nombre: "Flia Cardozo Martinez", 
-        cupos: 3 
+        nombre: "Fernando & Karen", 
+        cupos: 2 
     },
     "012": { 
-        nombre: "Santiago Perez", 
-        cupos: 1 
+        nombre: "Robert & Sra", 
+        cupos: 2 
     },
     "013": { 
-        nombre: "Flia Barreto Alarcon", 
-        cupos: 4 
+        nombre: "Eduar y Sra", 
+        cupos: 2 
     },
     "014": { 
-        nombre: "Ana & Sr", 
+        nombre: "Candelaria & Hilario", 
         cupos: 2 
     },
     "015": { 
-        nombre: "Rosellys & Jairo", 
+        nombre: "Elkin & Juneth", 
         cupos: 2 
     },
     "016": { 
-        nombre: "Edilberto & Mariela", 
+        nombre: "Carlos & Sra", 
         cupos: 2 
     },
     "017": { 
-        nombre: "Mary Luz & Sr", 
+        nombre: "Jhan Carlos & Sra", 
         cupos: 2 
     },
     "018": { 
-        nombre: "Day Luz & Luis", 
+        nombre: "Leonardo & Sra", 
         cupos: 2 
     },
     "019": { 
-        nombre: "Felix & Keila", 
+        nombre: "Neder & Sra", 
         cupos: 2 
     },
     "020": { 
-        nombre: "Gheraldine & Yefris", 
+        nombre: "Margarita & Duvan", 
         cupos: 2 
     },
     "021": { 
-        nombre: "Flia Causil Alarcon", 
-        cupos: 4 
+        nombre: "Juan Manuel & Sra", 
+        cupos: 2 
     },
     "022": { 
-        nombre: "Armando e hijo", 
+        nombre: "Ana Milena & María Jose", 
         cupos: 2 
     },
     "023": { 
-        nombre: "Yulissa & Andres", 
+        nombre: "Francisco & Katryn", 
         cupos: 2 
     },
     "024": { 
-        nombre: "Milena", 
+        nombre: "Franklin Argumedo", 
         cupos: 1 
     },
     "025": { 
-        nombre: "Malena & Edwin", 
+        nombre: "Carmen Bedoya & Flia", 
         cupos: 3 
     },
     "026": { 
-        nombre: "Sra Aida / Karina & Dairo", 
-        cupos: 3 
+        nombre: "Ever & Sra", 
+        cupos: 2 
     },
     "027": { 
-        nombre: "Oscar & Sra", 
+        nombre: "Guillermo & Sra", 
         cupos: 2 
     },
     "028": { 
-        nombre: "Jhonathan & María Fernanda", 
+        nombre: "Yamith & Sra", 
         cupos: 2 
     },
     "029": { 
-        nombre: "Luz Aida & Wilberto", 
+        nombre: "Heidy & Sr", 
         cupos: 2 
     },
     "030": { 
-        nombre: "Sra Jaqueline Castillo", 
-        cupos: 2 
-    },
-    "031": { 
-        nombre: "Sra María Alejandra & esposo", 
-        cupos: 2 
-    },
-    "032": { 
-        nombre: "Sra Dalila & esposo", 
-        cupos: 2 
-    },
-    "033": { 
-        nombre: "Edgar Sarmiento", 
-        cupos: 2 
-    },
-    "034": { 
-        nombre: "Flia Sarmiento Castillo", 
-        cupos: 2 
-    },
-    "035": { 
-        nombre: "Flia Castillo Castillo", 
-        cupos: 6 
-    },
-    "036": { 
-        nombre: "Marcela Castillo", 
+        nombre: "Gabriel Lopez", 
         cupos: 1 
-    },
-    "037": { 
-        nombre: "Mon Castillo & Sra", 
-        cupos: 2 
-    },
-    "038": { 
-        nombre: "Royer Castillo", 
-        cupos: 1 
-    },
-    "039": { 
-        nombre: "Jhoan & María Jose", 
-        cupos: 2 
-    },
-    "040": { 
-        nombre: "Gabriel & Karolay", 
-        cupos: 2 
-    },
-    "041": { 
-        nombre: "Gilberto Lopez", 
-        cupos: 1 
-    },
-    "042": { 
-        nombre: "Francis & Sara", 
-        cupos: 2 
-    },
-    "043": { 
-        nombre: "Cristina & Roque", 
-        cupos: 2 
-    },
-    "044": { 
-        nombre: "Wendy Perez", 
-        cupos: 1 
-    },
-    "045": { 
-        nombre: "Sra Ruby Morales", 
-        cupos: 1 
-    },
-    "046": { 
-        nombre: "Edwin & Luz", 
-        cupos: 2 
-    },
-    "047": { 
-        nombre: "Emilio & Sofia", 
-        cupos: 2 
     }
 
 };
-    // Obtener idName de la URL
+   // Obtener idName de la URL
     const params = new URLSearchParams(window.location.search);
     const idName = params.get("idName");
 
